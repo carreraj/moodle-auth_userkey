@@ -72,6 +72,7 @@ class auth_userkey_externallib_testcase extends advanced_testcase {
      * Test successful web service calls.
      */
     public function test_successful_webservice_calls() {
+        // FIXME:
         global $DB, $CFG;
 
         $CFG->auth = "userkey";
@@ -233,6 +234,7 @@ class auth_userkey_externallib_testcase extends advanced_testcase {
      * Test request gets executed correctly if use has required permissions.
      */
     public function test_request_gets_executed_if_user_has_permission() {
+        // FIXME:
         global $CFG, $DB;
 
         $this->setUser($this->user);

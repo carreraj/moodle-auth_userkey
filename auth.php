@@ -158,7 +158,6 @@ class auth_plugin_userkey extends auth_plugin_base {
         $this->userkeymanager->delete_keys($key->userid);
 
         $user = get_complete_user_data('id', $key->userid);
-        // TODO: only allow a "valid user".
         if ( $this->is_authtype_restriction_enabled() && $user->auth <> $this->authtype ) {
             throw new invalid_parameter_exception('Auth type not allowed');
         }
@@ -448,7 +447,6 @@ class auth_plugin_userkey extends auth_plugin_base {
      * @throws \invalid_parameter_exception
      */
     protected function generate_user_key(array $data) {
-        // TODO: only generate for "valid users".
 
         $user = $this->get_user($data);
         if ( $this->is_authtype_restriction_enabled() && $user->auth <> $this->authtype ) {

@@ -3,7 +3,7 @@ language: php
 notifications:
   email:
     recipients:
-    - dmitriim@catalyst-au.net
+    - carreraj@unizar.es
 
 sudo: false
 
@@ -12,19 +12,19 @@ cache:
     - $HOME/.composer/cache
 
 php:
-  - 7.0
-  - 7.1
+  - "7.0"
+#  - 7.1
 
-addons:
-  postgresql: "9.3"
+#addons:
+#  postgresql: "9.3"
 
 env:
-  - DB=pgsql MOODLE_BRANCH=MOODLE_33_STABLE
-  - DB=pgsql MOODLE_BRANCH=MOODLE_34_STABLE
-  - DB=pgsql MOODLE_BRANCH=master
+#  - DB=pgsql MOODLE_BRANCH=MOODLE_33_STABLE
+#  - DB=pgsql MOODLE_BRANCH=MOODLE_34_STABLE
+#  - DB=pgsql MOODLE_BRANCH=master
   - DB=mysqli MOODLE_BRANCH=MOODLE_33_STABLE
-  - DB=mysqli MOODLE_BRANCH=MOODLE_34_STABLE
-  - DB=mysqli MOODLE_BRANCH=master
+#  - DB=mysqli MOODLE_BRANCH=MOODLE_34_STABLE
+#  - DB=mysqli MOODLE_BRANCH=master
 
 before_install:
   - cd ../..

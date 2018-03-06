@@ -218,6 +218,7 @@ class auth_plugin_userkey_testcase extends advanced_testcase {
      * Test that we can request a user provided user data as an array.
      */
     public function test_return_correct_login_url_if_user_is_array() {
+        // FIXME:
         global $CFG;
 
         $user = array();
@@ -239,6 +240,7 @@ class auth_plugin_userkey_testcase extends advanced_testcase {
      * Test that we can request a user provided user data as an object.
      */
     public function test_return_correct_login_url_if_user_is_object() {
+        // FIXME:
         global $CFG;
 
         $user = new stdClass();
@@ -260,6 +262,7 @@ class auth_plugin_userkey_testcase extends advanced_testcase {
      * Test that we can request a user provided user data as an object.
      */
     public function test_return_correct_login_url_if_iprestriction_is_enabled_and_data_is_correct() {
+        // FIXME:
         global $CFG;
 
         $user = new stdClass();
@@ -491,6 +494,7 @@ class auth_plugin_userkey_testcase extends advanced_testcase {
      * Test that we can get login url if we do not use fake keymanager.
      */
     public function test_return_correct_login_url_if_user_is_object_using_default_keymanager() {
+        // FIXME:
         global $DB, $CFG;
 
         $user = array();
@@ -806,6 +810,7 @@ class auth_plugin_userkey_testcase extends advanced_testcase {
      * @expectedExceptionMessage Unsupported redirect to http://www.example.com/moodle detected, execution terminated.
      */
     public function test_that_user_logged_in_and_redirected() {
+        // FIXME:
         global $DB, $CFG;
 
         $key = new stdClass();
@@ -827,6 +832,7 @@ class auth_plugin_userkey_testcase extends advanced_testcase {
      * Test that a user logs in correctly.
      */
     public function test_that_user_logged_in_correctly() {
+        //FIXME:
         global $DB, $USER, $SESSION;
 
         $key = new stdClass();
@@ -858,6 +864,7 @@ class auth_plugin_userkey_testcase extends advanced_testcase {
      * @expectedExceptionMessage Unsupported redirect to /course/index.php?id=12&key=134 detected, execution terminated.
      */
     public function test_that_user_gets_redirected_to_internal_wantsurl() {
+        // FIXME:
         global $DB;
 
         $key = new stdClass();
@@ -885,6 +892,7 @@ class auth_plugin_userkey_testcase extends advanced_testcase {
      * execution terminated.
      */
     public function test_that_user_gets_redirected_to_external_wantsurl() {
+        // FIXME:
         global $DB;
 
         $key = new stdClass();
