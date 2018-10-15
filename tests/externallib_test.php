@@ -49,7 +49,7 @@ class auth_userkey_externallib_testcase extends advanced_testcase {
         $user['email'] = 'exists@test.com';
         $user['idnumber'] = 'idnumber';
         $user['auth'] = 'userkey';
-        
+
         $this->user = self::getDataGenerator()->create_user($user);
     }
 

@@ -1,5 +1,8 @@
-<a href="https://travis-ci.org/catalyst/moodle-auth_userkey">
-<img src="https://travis-ci.org/catalyst/moodle-auth_userkey.svg?branch=master">
+<a href="https://travis-ci.org/carreraj/moodle-auth_userkey">Master: 
+<img src="https://travis-ci.org/carreraj/moodle-auth_userkey.svg?branch=master">
+</a>
+<a href="https://travis-ci.org/carreraj/moodle-auth_userkey">Limit auth type: 
+<img src="https://travis-ci.org/carreraj/moodle-auth_userkey.svg?branch=limitAuthType">
 </a>
 
 Log in to Moodle using one time user key.
